@@ -1,2 +1,2 @@
-# ezpaarse-ressources
-Ressources that should be updated independently from ezPAARSE source code
+# ezparse-ressources
+Resources that should be updated independently from ezPAARSE source code
