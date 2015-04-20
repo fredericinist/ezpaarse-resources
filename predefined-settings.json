@@ -315,5 +315,12 @@
     "headers": {
       "Log-Format-squid": "%ts.%tu %<st %>a %Ss/%>Hs %tr %rm %ru %[un HIER_DIRECT/%<a %mt"
     }
+  },
+  "01-fr-univ-dauphine": {
+    "fullName": "Université Paris Dauphine",
+    "country": "France",
+    "headers": {
+      "Log-Format-apache": "%{epoch},%h,%b,%<[\"]?>%{ress-name}<[a-zA-Z0-9 \":,-]+>%<[\"]?>,%U,%>s,%<[\"]?>%{mt}<[a-zA-Z0-9-/ \"=+;]+>%<[\"]?>,%{profil1}<[a-zA-Z0-9-/ \"=+;_]+>,%{uid},%{session-id}"
+    }
   }
 }
