@@ -15,7 +15,7 @@
     "fullName": "Université de Lorraine - PETALE",
     "country": "France",
     "headers": {
-      "Relative-Domain": "docnum.univ-lorraine.fr",
+      "Force-Parser": "docnum",
       "Output-Fields": "+year,+institution,-login,-platform,-platform_name,-publisher_name,-rtype,-mime,-online_identifier,-print_identifier,-doi,-publication_title,-identd,-domain"
     }
   },
@@ -23,7 +23,7 @@
     "fullName": "HAL - Archives Ouvertes",
     "country": "France",
     "headers": {
-      "Relative-Domain": "hal.archives-ouvertes.fr",
+      "Force-Parser": "hal",
       "Output-Fields": "-login,-platform,-platform_name,-publisher_name,-rtype,-online_identifier,-print_identifier,-doi,-publication_title,-identd,-domain"
     }
   },
@@ -208,39 +208,30 @@
       "Log-Format-ezproxy": "%h %l %u %t \"%r\" %s %b %{referer}<.*?>"
     }
   },
-  "00-fr-inist-lara": {
-    "fullName": "INIST-CNRS - Lara",
+  "00-fr-inist-irevues-dspace": {
+    "fullName": "INIST-CNRS - Irevues - Dspace",
     "country": "France",
     "headers": {
       "Log-Format-apache": "%h %l %u %t %r %>s %b",
-      "Relative-Domain": "lara.inist.fr",
-      "Output-Fields": "+pid,-domain"
+      "Force-Parser": "dspace",
+      "Force-ECField-Publisher": "Irevues",
+      "Disable-Filters": "robots",
+      "Output-Fields": "+pid,+robot,-domain,-online_identifier,-print_identifier"
     }
   },
   "00-fr-inist-irevues-lodel": {
     "fullName": "INIST-CNRS - Irevues - Lodel",
     "country": "France",
     "headers": {
-      "Relative-Domain": "lodel.irevues.inist.fr",
+      "Force-Parser": "lodel",
       "Output-Fields": "+pid,-domain,-login,-platform"
-    }
-  },
-  "00-fr-inist-irevues": {
-    "fullName": "INIST-CNRS - Irevues - Dspace",
-    "country": "France",
-    "headers": {
-      "Log-Format-apache": "%h %l %u %t %r %>s %b",
-      "Relative-Domain": "irevues.inist.fr",
-      "Output-Fields": "+pid,-domain",
-      "Geoip-Localization": "geoip-lookup",
-      "Geoip-Output-Fields": "all"
     }
   },
   "01-fr-ampt": {
     "fullName": "Archive ouverte Art et Metier ParisTech",
     "country": "France",
     "headers": {
-      "Relative-Domain": "sam.ensam.eu",
+      "Force-Parser": "sam",
       "Output-Fields": "+pid,-domain,-doi,-eissn,-title,-identid"
     }
   },
@@ -249,7 +240,7 @@
     "country": "France",
     "headers": {
       "Log-Format-apache": "%<[a-zA-Z0-9\\+\\-.:]+> %h %l %u %t \"%r\" %>s %b \"%<[^\"]+>\" \"%<.*>\"",
-      "Relative-Domain": "ao.univ-angers.fr",
+      "Force-Parser": "ao",
       "Output-Fields": "+pid,-domain,-doi,-eissn,-title,-identid"
     }
   },
