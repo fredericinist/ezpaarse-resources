@@ -216,7 +216,8 @@
       "Force-Parser": "dspace",
       "Force-ECField-Publisher": "Irevues",
       "Disable-Filters": "robots",
-      "Output-Fields": "+pid,+robot,-domain,-online_identifier,-print_identifier"
+      "Output-Fields": "+pid,+robot,-domain,-online_identifier,-print_identifier,-platform_name,-identd,-doi",
+      "ezPAARSE-Job-Notifications": "mail<laurent.rassinoux@inist.fr>"
     }
   },
   "00-fr-inist-irevues-lodel": {
@@ -224,7 +225,10 @@
     "country": "France",
     "headers": {
       "Force-Parser": "lodel",
-      "Output-Fields": "+pid,-domain,-login,-platform"
+      "Force-ECField-Publisher": "Irevues",
+      "Disable-Filters": "robots",
+      "Output-Fields": "+pid,+robot,-domain,-online_identifier,-print_identifier,-platform_name,-identd,-doi",
+      "ezPAARSE-Job-Notifications": "mail<laurent.rassinoux@inist.fr>"
     }
   },
   "01-fr-ampt": {
