@@ -216,8 +216,7 @@
       "Force-Parser": "dspace",
       "Force-ECField-Publisher": "Irevues",
       "Disable-Filters": "robots",
-      "Output-Fields": "+pid,+robot,-domain,-online_identifier,-print_identifier,-platform_name,-identd,-doi",
-      "ezPAARSE-Job-Notifications": "mail<laurent.rassinoux@inist.fr>"
+      "Output-Fields": "+pid,+robot,-domain,-online_identifier,-print_identifier,-platform_name,-identd,-doi"
     }
   },
   "00-fr-inist-irevues-lodel": {
@@ -227,8 +226,7 @@
       "Force-Parser": "lodel",
       "Force-ECField-Publisher": "Irevues",
       "Disable-Filters": "robots",
-      "Output-Fields": "+pid,+robot,-domain,-online_identifier,-print_identifier,-platform_name,-identd,-doi",
-      "ezPAARSE-Job-Notifications": "mail<laurent.rassinoux@inist.fr>"
+      "Output-Fields": "+pid,+robot,-domain,-online_identifier,-print_identifier,-platform_name,-identd,-doi"
     }
   },
   "01-fr-ampt": {
