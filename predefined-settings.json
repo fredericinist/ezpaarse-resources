@@ -27,6 +27,14 @@
       "Output-Fields": "-login,-platform,-platform_name,-publisher_name,-rtype,-online_identifier,-print_identifier,-doi,-publication_title,-identd,-domain"
     }
   },
+  "00-eu-openaire": {
+    "fullName": "OpenAIRE - Archives Ouvertes",
+    "country": "Europe",
+    "headers": {
+	  "Force-Parser": "openaire",
+	  "Log-Format-apache": "%{piwik-ip}<.*> %h - - %t \"%{piwik}<.*>\" %>s - \"%U\" %{user-agent}<.*>"
+      }
+  },
   "00-ge-ezproxy-1": {
     "fullName": "EZproxy (with user-agent) : %h %l %u %t \"%r\" %s %b \"%{user-agent}<.*>\"",
     "country": "Generic",
