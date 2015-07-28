@@ -4,6 +4,37 @@
     "country": "France",
     "headers": {}
   },
+  "00-fr-inist-DCR-false": {
+    "fullName": "INIST-CNRS DCR-false",
+    "country": "France",
+    "headers": { "Double-Click-Removal": "false"}
+  },
+  "00-fr-inist-Datetime": {
+    "fullName": "INIST-CNRS +Datetime",
+    "country": "France",
+    "headers": { "Output-Fields" : "+datetime"}
+  },
+  "00-fr-inist-irevues-dspace": {
+    "fullName": "INIST-CNRS - Irevues - Dspace",
+    "country": "France",
+    "headers": {
+      "Log-Format-apache": "%h %l %u %t %r %>s %b",
+      "Force-Parser": "dspace",
+      "Force-ECField-Publisher": "Irevues",
+      "Disable-Filters": "robots",
+      "Output-Fields": "+pid,+robot,-domain,-online_identifier,-print_identifier,-platform_name,-identd,-doi"
+    }
+  },
+  "00-fr-inist-irevues-lodel": {
+    "fullName": "INIST-CNRS - Irevues - Lodel",
+    "country": "France",
+    "headers": {
+      "Force-Parser": "lodel",
+      "Force-ECField-Publisher": "Irevues",
+      "Disable-Filters": "robots",
+      "Output-Fields": "+pid,+robot,-domain,-online_identifier,-print_identifier,-platform_name,-identd,-doi"
+    }
+  },
   "00-fr-univ-lorr": {
     "fullName": "Université de Lorraine",
     "country": "France",
@@ -214,27 +245,6 @@
     "country": "United States",
     "headers": {
       "Log-Format-ezproxy": "%h %l %u %t \"%r\" %s %b %{referer}<.*?>"
-    }
-  },
-  "00-fr-inist-irevues-dspace": {
-    "fullName": "INIST-CNRS - Irevues - Dspace",
-    "country": "France",
-    "headers": {
-      "Log-Format-apache": "%h %l %u %t %r %>s %b",
-      "Force-Parser": "dspace",
-      "Force-ECField-Publisher": "Irevues",
-      "Disable-Filters": "robots",
-      "Output-Fields": "+pid,+robot,-domain,-online_identifier,-print_identifier,-platform_name,-identd,-doi"
-    }
-  },
-  "00-fr-inist-irevues-lodel": {
-    "fullName": "INIST-CNRS - Irevues - Lodel",
-    "country": "France",
-    "headers": {
-      "Force-Parser": "lodel",
-      "Force-ECField-Publisher": "Irevues",
-      "Disable-Filters": "robots",
-      "Output-Fields": "+pid,+robot,-domain,-online_identifier,-print_identifier,-platform_name,-identd,-doi"
     }
   },
   "01-fr-ampt": {
