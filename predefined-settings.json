@@ -12,7 +12,7 @@
   "00-fr-inist-Datetime": {
     "fullName": "INIST-CNRS +Datetime",
     "country": "France",
-    "headers": { "Output-Fields" : "+datetime"}
+    "headers": { "Output-Fields" : "+datetime,-doi"}
   },
   "00-fr-inist-irevues-dspace": {
     "fullName": "INIST-CNRS - Irevues - Dspace",
@@ -80,6 +80,15 @@
       "Log-Format-ezproxy": "%t %h %{session} %U \"%{referer}<[^ ]+>\" %s"
     }
   },
+  "01-fr-full-enrichment": {
+    "fullName": "Enrichissement automatique",
+    "country": "France",
+    "headers": {
+      "Output-Fields": "+pii",
+      "crossref-enrich": "true",
+      "elsevier-enrich": "true"
+    }
+  }, 
   "01-fr-univ-pda": {
     "fullName": "Université Paris Descartes Apache",
     "country": "France",
