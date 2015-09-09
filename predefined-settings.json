@@ -61,6 +61,13 @@
     "country": "France",
     "headers": {}
   },
+  "01-fr-ec-lyon": {
+    "fullName": "EC Lyon Bibliopam",
+    "country": "France",
+      "headers": {
+	  "Request-Charset": "iso-8859-1" 
+    }
+  },
   "10-ch-epfl": {
     "fullName": "École polytechnique fédérale de Lausanne",
     "country": "Suisse",
