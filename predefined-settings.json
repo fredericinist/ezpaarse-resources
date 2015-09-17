@@ -5,16 +5,24 @@
     "headers": {}
   },
   "00-fr-inist-DCR-false": {
-    "fullName": "INIST-CNRS DCR-false",
+    "fullName": "INIST-CNRS DoubleClickRemoval-false",
     "country": "France",
     "headers": { "Double-Click-Removal": "false"}
+  },
+  "00-fr-inist-DCMixed10": {
+    "fullName": "INIST-CNRS DoubleClikMixed-10",
+    "country": "France",
+    "headers": { 
+      "Output-Fields": "+datetime",
+      "Double-Click-MIXED":"10"  
+    }
   },
   "00-fr-inist-Datetime": {
     "fullName": "INIST-CNRS +Datetime",
     "country": "France",
     "headers": { "Output-Fields" : "+datetime,-doi"}
   },
-  "00-fr-inist-irevues-dspace": {
+ "00-fr-inist-irevues-dspace": {
     "fullName": "INIST-CNRS - Irevues - Dspace",
     "country": "France",
     "headers": {
