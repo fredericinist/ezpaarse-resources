@@ -180,7 +180,7 @@
     "fullName": "Université de Limoges",
     "country": "France",
     "headers": {
-      "Log-Format-ezproxy": "%t %h %U"
+      "Log-Format-ezproxy": "%h %{session}<[a-zA-Z0-9\\-\\+]+> %u %t \"%r\" %s %b %{user}<[a-zA-Z0-9\\-\\+,]+>"
     }
   },
   "01-fr-univ-montpellier-3": {
