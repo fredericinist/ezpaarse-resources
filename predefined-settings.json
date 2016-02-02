@@ -351,6 +351,13 @@
       "Log-Format-squid": "%ts.%tu %<st %>a %Ss/%>Hs %tr %rm %ru %[un HIER_DIRECT/%<a %mt"
     }
   },
+  "01-fr-BSB": {
+    "fullName": "BSB",
+    "country": "France",
+    "headers": {
+      "Log-Format-ezproxy": "%t %h \"%r\" %s %b"
+    }
+  },
   "01-fr-univ-dauphine": {
     "fullName": "Université Paris Dauphine",
     "country": "France",
