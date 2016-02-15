@@ -92,9 +92,10 @@
     "fullName": "Enrichissement automatique",
     "country": "France",
     "headers": {
-      "Output-Fields": "+pii",
+      "Output-Fields": "+pii,+ppn",
       "crossref-enrich": "true",
-      "elsevier-enrich": "true"
+      "elsevier-enrich": "true",
+      "sudoc-enrich": "true"
     }
   }, 
   "01-fr-univ-pda": {
