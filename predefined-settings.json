@@ -66,6 +66,14 @@
       "Output-Fields": "-login,-platform,-platform_name,-publisher_name,-rtype,-online_identifier,-print_identifier,-doi,-publication_title,-identd,-domain"
     }
   },
+  "00-fr-istex": {
+    "fullName": "ISTEX",
+    "country": "France",
+    "headers": {
+      "Force-Parser": "istex",
+      "Output-Fields": "-login,-platform,-publisher_name,+language,+publication_date,-identd,-domain,-title_id,-doi-publication-date-year"
+    }
+  },
   "00-eu-openaire": {
     "fullName": "OpenAIRE - Archives Ouvertes",
     "country": "Europe",
