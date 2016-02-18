@@ -100,7 +100,7 @@
     "fullName": "Enrichissement automatique",
     "country": "France",
     "headers": {
-      "Output-Fields": "+pii,+ppn",
+      "Output-Fields": "+pii,+sudoc-ppn",
       "crossref-enrich": "true",
       "elsevier-enrich": "true",
       "sudoc-enrich": "true"
