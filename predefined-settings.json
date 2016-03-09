@@ -134,7 +134,8 @@
     "fullName": "Université de Rennes 1",
     "country": "France",
     "headers": {
-      "Log-Format-ezproxy": "%h %{session1}<[a-zA-Z0-9\\-\\+]+> %{session2}<[a-zA-Z0-9\\-\\+]+> %t \"%r\" %s %b %{user}<[a-zA-Z0-9\\-\\+]+>"
+      "Log-Format-ezproxy": "%h %u %{ezproxy-groups}i %t \"%r\" %s %b %<.*>",
+      "Output-Fields": "+ezproxy-groups"
     }
   },
   "01-fr-univ-rennes-2": {
