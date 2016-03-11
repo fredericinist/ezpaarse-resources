@@ -281,6 +281,13 @@
       "Log-Format-ezproxy": "%h %l %u %t \"%r\" %s %b %{referer}<.*?>"
     }
   },
+  "10-sg-nusl": {
+    "fullName": "National University of Singapore Library",
+    "country": "Singapour",
+    "headers": {
+      "Log-Format-ezproxy": "%h %u %{user1}<.*> %t "%r" %s %b %{referer}<.*>"
+    }
+  },
   "01-fr-ampt": {
     "fullName": "Archive ouverte Art et Metier ParisTech",
     "country": "France",
