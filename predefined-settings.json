@@ -282,8 +282,8 @@
     }
   },
   "10-sg-nusl": {
-    "fullName": "National University of Singapore Library",
-    "country": "Singapour",
+    "fullName": "Singapore Management University",
+    "country": "Singapore",
     "headers": {
       "Log-Format-ezproxy": "%h %u %{user1}<.*> %t \"%r\" %s %b %{referer}<.*>"
     }
