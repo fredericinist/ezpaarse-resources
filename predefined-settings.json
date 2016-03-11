@@ -285,7 +285,7 @@
     "fullName": "National University of Singapore Library",
     "country": "Singapour",
     "headers": {
-      "Log-Format-ezproxy": "%h %u %{user1}<.*> %t "%r" %s %b %{referer}<.*>"
+      "Log-Format-ezproxy": "%h %u %{user1}<.*> %t \"%r\" %s %b %{referer}<.*>"
     }
   },
   "01-fr-ampt": {
