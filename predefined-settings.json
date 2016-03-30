@@ -281,6 +281,13 @@
       "Log-Format-ezproxy": "%h %l %u %t \"%r\" %s %b %{referer}<.*?>"
     }
   },
+  "10-us-hofs": {
+    "fullName": "Hofstra University",
+    "country": "United States",
+    "headers": {
+      "Log-Format-ezproxy": "%{datetime}<\\d{4}/\\d{2}/\\d{2}:\\d{2}:\\d{2}:\\d{2}>%<\\t>%h%<\\t>%u%<\\t>%{ezproxy-spuaccess}%<\\t>%{domain}<[a-z.]+>%<\\t>%U%<\\t>%s%<\\t>%{user-agent}<.*>"
+    }
+  },    
   "10-sg-nusl": {
     "fullName": "Singapore Management University",
     "country": "Singapore",
