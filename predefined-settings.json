@@ -134,8 +134,9 @@
     "fullName": "Bibliothèque Diderot / ENS Lyon",
     "country": "France",
     "headers": {
-      "Log-Format-ezproxy": "%h %u %{groups}<[a-zA-Z\\+\\.]+> %{ezproxy-session} %t \"%r\" %s %b"
-    }
+      "Log-Format-ezproxy": "%h %u %{groups}<[a-zA-Z\\+\\.\\-]+> %{ezproxy-session} %t "%r" %s %b",
+      "Output-Fields": "-platform,-ezproxy-session,-status,-size"
+   }
   },
   "01-fr-univ-rennes-1": {
     "fullName": "Université de Rennes 1",
