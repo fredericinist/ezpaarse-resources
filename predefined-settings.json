@@ -338,7 +338,7 @@
     "fullName": "Université Lille 2",
     "country": "France",
     "headers": {
-      "Log-Format-ezproxy": "%h %u %{session}<[a-zA-Z0-9\\-]+> %t \"%r\" %s %b"
+      "Log-Format-ezproxy": "%h %{ezproxy-groups}i %l %u %t \"%r\" %s %b"
     }
   },
   "10-au-sydney": {
