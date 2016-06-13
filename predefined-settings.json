@@ -1,4 +1,11 @@
 {
+  "00-00-ezMESURE": {
+    "fullName": "ezPAARSE output to ezMESURE input",
+    "country": "Generic - preconfiguration",
+    "headers": {
+      "Output-Fields": "+id,+pii,+sudoc-ppn,-platform,-identd,-size,-status"
+    }
+  },
   "00-fr-inist": {
     "fullName": "INIST-CNRS",
     "country": "France",
