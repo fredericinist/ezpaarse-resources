@@ -78,7 +78,9 @@
     "country": "France",
     "headers": {
       "Force-Parser": "istex",
-      "Output-Fields": "+login,+istex_rtype,+istex_genre,-platform,+publisher_name,+language,+publication_date,-identd,-domain,-title_id,-doi-publication-date-year"
+      "istex-enrich":"true",
+      "Crypted-Fields":"none",
+      "Output-Fields": "+login,+istex_rtype,+istex_genre,-platform,+publisher_name,+language,+publication_date,-identd,-domain,-title_id,+doi-publication-date-year"
     }
   },
   "00-eu-openaire": {
