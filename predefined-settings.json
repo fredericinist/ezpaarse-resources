@@ -210,11 +210,11 @@
       "Log-Format-ezproxy": "%h %{session}<[a-zA-Z0-9\\-\\+]+> %u %t \"%r\" %s %b %{user}<[a-zA-Z0-9\\-\\+,]+>"
     }
   },
-  "01-fr-univ-montpellier-3": {
-    "fullName": "Université de Montpellier 3",
+  "01-fr-univ-montpellier": {
+    "fullName": "BIU de Montpellier",
     "country": "France",
     "headers": {
-      "Log-Format-ezproxy": "%h %{session}<[a-zA-Z0-9\\-\\+]+> %{type_user}<[a-zA-Z0-9]+>.%{login}<[a-zA-Z0-9]+> %t \"%r\" %s %b %<[a-zA-Z0-9\\-\\+]+>",
+      "Log-Format-ezproxy": "%h %{session}<[a-zA-Z0-9\\-\\+]+> %{type_user}<(?:[a-zA-Z0-9]+\\.)?>%{login}<[a-zA-Z0-9]+> %t \"%r\" %s %b %<[a-zA-Z0-9\\-\\+]+>",
       "Crypted-Fields": "none"
     }
   },
