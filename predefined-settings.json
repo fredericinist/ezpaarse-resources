@@ -57,6 +57,18 @@
       "Log-Format-ezproxy": "%h %{session}<[a-zA-Z0-9\\-\\+]+> %u %t \"%r\" %s %b %{user}<[a-zA-Z0-9\\-\\+,]+>"
     }
   },
+  "00-fr-univ-fc": {
+    "fullName": "Université de Franche Comté",
+    "country": "France",
+    "headers": {
+      "Log-Format-ezproxy": "%{login}<[^\\s]*[@0-9A-Z]*> %t \"%r\" %s %b",
+      "Crypted-Fields": "none",
+      "cut": "true",
+      "cut-fields": "login",
+      "cut-regex": "([^@]*)@([^@]*)@([^@]*)@([^@]*)@([^@]*)@([^@]*)@([^@]*)",
+      "cut-fields-create": "c1,c2,c3,c4,c5,c6,c7"  
+    }
+  },
   "00-fr-univ-lorr-docnum": {
     "fullName": "Université de Lorraine - PETALE",
     "country": "France",
