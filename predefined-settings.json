@@ -54,7 +54,8 @@
     "fullName": "Université de Lorraine",
     "country": "France",
     "headers": {
-      "Log-Format-ezproxy": "%h %{session}<[a-zA-Z0-9\\-\\+]+> %u %t \"%r\" %s %b %{user}<[a-zA-Z0-9\\-\\+,]+>"
+      "Log-Format-ezproxy": "%h %{session}<[a-zA-Z0-9\\-\\+]+> %u %t \"%r\" %s %b %{user}<[a-zA-Z0-9\\-\\+,]+>",
+      "Crypted-Fields": "none"
     }
   },
   "00-fr-univ-fc": {
