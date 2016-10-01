@@ -306,7 +306,7 @@
     "fullName": "Nevada State College - Henderson",
     "country": "United States",
     "headers": {
-      "Log-Format-ezproxy": "%h %<\\t> %{identd}<[^ ]+> %<\\t> %{login}<[^ ]+> %<\\t> %t %<\\t> \"%r\" %<\\t> %s %<\\t> %b %<\\t> %{ezproxy-session}<[A-Za-z0-9 \\-]+> %<\\t> %{processtime}<[0-9 \\-]+> %<\\t> "%{referer}<[^ ]+>" %<\\t> \"%{user-agent}<.*>\" %<\\t> %{ezproxy-platform}<[^ ]+> %<\\t> %{ezproxy-database}<[^ ]+> %{endofline}<.*>",
+      "Log-Format-ezproxy": "%h %<\\t> %{identd}<[^ ]+> %<\\t> %{login}<[^ ]+> %<\\t> %t %<\\t> \"%r\" %<\\t> %s %<\\t> %b %<\\t> %{ezproxy-session}<[A-Za-z0-9 \\-]+> %<\\t> %{processtime}<[0-9 \\-]+> %<\\t> \"%{referer}<[^ ]+>\" %<\\t> \"%{user-agent}<.*>\" %<\\t> %{ezproxy-platform}<[^ ]+> %<\\t> %{ezproxy-database}<[^ ]+> %{endofline}<.*>",
       "Crypted-Fields": "none"
     }
   },
