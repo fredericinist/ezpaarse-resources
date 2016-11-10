@@ -11,25 +11,42 @@
     "country": "France",
     "headers": {}
   },
+  "00-fr-bibcnrs": {
+    "fullName": "INIST-BIBCNRS",
+    "country": "France",
+    "headers": {
+      "Log-Format-ezproxy": "%h %{ezproxy-session} %l %u %t \"%r\" %s %b %{bib-groups}<[a-zA-Z0-9@\\.\\-_%\\,=\\+]+>",
+      "Crypted-Fields": "none",
+      "Output-Fields": "+bib-groups",
+      "cut": "true",
+      "cut-field": "login",
+      "cut-regex": "([^_]+)_O_([^_]+)_I_([^_]+)_OU_([^_]+)",
+      "cut-create-fields": "user,section,department,unit"
+    }
+  },
   "00-fr-inist-DCR-false": {
     "fullName": "INIST-CNRS DoubleClickRemoval-false",
     "country": "France",
-    "headers": { "Double-Click-Removal": "false"}
+    "headers": {
+      "Double-Click-Removal": "false"
+    }
   },
   "00-fr-inist-DCMixed10": {
     "fullName": "INIST-CNRS DoubleClikMixed-10",
     "country": "France",
-    "headers": { 
+    "headers": {
       "Output-Fields": "+datetime",
-      "Double-Click-MIXED":"10"  
+      "Double-Click-MIXED": "10"
     }
   },
   "00-fr-inist-Datetime": {
     "fullName": "INIST-CNRS +Datetime",
     "country": "France",
-    "headers": { "Output-Fields" : "+datetime,-doi"}
+    "headers": {
+      "Output-Fields": "+datetime,-doi"
+    }
   },
- "00-fr-inist-irevues-dspace": {
+  "00-fr-inist-irevues-dspace": {
     "fullName": "INIST-CNRS - Irevues - Dspace",
     "country": "France",
     "headers": {
@@ -67,7 +84,7 @@
       "cut": "true",
       "cut-fields": "login",
       "cut-regex": "([^@]*)@([^@]*)@([^@]*)@([^@]*)@([^@]*)@([^@]*)@([^@]*)",
-      "cut-fields-create": "c1,c2,c3,c4,c5,c6,c7"  
+      "cut-fields-create": "c1,c2,c3,c4,c5,c6,c7"
     }
   },
   "00-fr-univ-lorr-docnum": {
@@ -113,9 +130,9 @@
     "fullName": "OpenAIRE - Archives Ouvertes",
     "country": "Europe",
     "headers": {
-	  "Force-Parser": "openaire",
-	  "Log-Format-apache": "%{piwik-ip}<.*> %h - - %t \"%{piwik}<.*>\" %>s - \"%U\" %{user-agent}<.*>"
-      }
+      "Force-Parser": "openaire",
+      "Log-Format-apache": "%{piwik-ip}<.*> %h - - %t \"%{piwik}<.*>\" %>s - \"%U\" %{user-agent}<.*>"
+    }
   },
   "00-ge-ezproxy-1": {
     "fullName": "EZproxy (with user-agent) : %h %l %u %t \"%r\" %s %b \"%{user-agent}<.*>\"",
@@ -140,7 +157,7 @@
       "elsevier-enrich": "true",
       "sudoc-enrich": "true"
     }
-  }, 
+  },
   "01-fr-univ-pda": {
     "fullName": "Université Paris Descartes Apache",
     "country": "France",
@@ -156,8 +173,8 @@
   "01-fr-ec-lyon": {
     "fullName": "EC Lyon Bibliopam",
     "country": "France",
-      "headers": {
-	  "Request-Charset": "iso-8859-1" 
+    "headers": {
+      "Request-Charset": "iso-8859-1"
     }
   },
   "10-ch-epfl": {
@@ -171,7 +188,7 @@
     "headers": {
       "Log-Format-ezproxy": "%h %u %{groups}<[a-zA-Z\\+\\.\\-]+> %{ezproxy-session} %t \"%r\" %s %b",
       "Output-Fields": "-platform,-ezproxy-session,-status,-size"
-   }
+    }
   },
   "01-fr-univ-rennes-1": {
     "fullName": "Université de Rennes 1",
@@ -226,7 +243,6 @@
     "country": "France",
     "headers": {
       "Log-Format-apache": "%{epoch},%h,%b,%<[\"]?>%{ress-name}<[a-zA-Z0-9 \":,-]+>%<[\"]?>,%U,%>s,%<[\"]?>%{mt}<[a-zA-Z0-9-/ \"=+;]+>%<[\"]?>,%{profil1}<[a-zA-Z0-9-/ \"=+;_]+>,%{uid},%{session-id},%{profil2}<(?:[a-zA-Z0-9-_]+)?>"
-
     }
   },
   "01-fr-univ-limoges": {
@@ -339,7 +355,7 @@
     "headers": {
       "Log-Format-ezproxy": "%{datetime}<\\d{4}/\\d{2}/\\d{2}:\\d{2}:\\d{2}:\\d{2}>%<\\t>%h%<\\t>%u%<\\t>%{ezproxy-spuaccess}%<\\t>%{domain}<[a-z.]+>%<\\t>%U%<\\t>%s%<\\t>%{user-agent}<.*>"
     }
-  },    
+  },
   "10-sg-nusl": {
     "fullName": "Singapore Management University",
     "country": "Singapore",
@@ -410,7 +426,7 @@
     "fullName": "UVSQ - Université de Versailles St-Quentin-en-Yvelines Bibliopam",
     "country": "France",
     "headers": {
-      "Log-Format-apache": "%{epoch},%h,%b,%{ress-name}<[a-zA-Z0-9-\/ ]+>,\"%U\",%>s,%{mt}<[a-zA-Z0-9-\/ ;=]+>,%{profil}<.+>,%{uid},%{session-id}"
+      "Log-Format-apache": "%{epoch},%h,%b,%{ress-name}<[a-zA-Z0-9-/ ]+>,\"%U\",%>s,%{mt}<[a-zA-Z0-9-/ ;=]+>,%{profil}<.+>,%{uid},%{session-id}"
     }
   },
   "01-fr-mines-paristech-squid": {
