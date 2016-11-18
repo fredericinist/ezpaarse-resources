@@ -111,7 +111,7 @@
       "istex-enrich": "true",
       "istex-ttl": "3600",
       "Crypted-Fields": "none",
-      "Log-Format-apache": "%h %<\\\"?>%{istex-id}<[^ ]+>%<\\\"?> \"%{owner}<[^\\\"]+>\" %u %t \"%r\" %{status}<[0-9]+> %b \"%{referer}<[^\\\"]+>\" \"%{user-agent}<[^\\\"]+>\" %{sid}<[^ ]+>",
+      "Log-Format-apache": "%h %<\"?>%{istex-id}<[^ ]+>%<\"?> %<\"?>%{owner}<[^\"]+>%<\"?> %u %t \"%r\" %{status}<[0-9]+> %b \"%{referer}<[^\"]+>\" \"%{user-agent}<[^\"]+>\" %{sid}<[^ ]+>",
       "Output-Fields": "+login,+istex_rtype,+istex_genre,-platform,+publisher_name,+language,+publication_date,-identd,-domain,-title_id,+doi-publication-date-year"
     }
   },
